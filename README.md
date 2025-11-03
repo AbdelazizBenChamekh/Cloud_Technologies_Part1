@@ -24,6 +24,7 @@ Copy code
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 <img width="426" height="51" alt="image" src="https://github.com/user-attachments/assets/24e95f77-2845-42fa-b1bf-bbeb53976ee2" />
 
 
