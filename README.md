@@ -15,8 +15,6 @@ web_projects/
 │ └── project2.conf
 └── README.md
 
-yaml
-Copy code
 
 ---
 
