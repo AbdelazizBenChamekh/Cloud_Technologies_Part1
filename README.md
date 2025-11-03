@@ -44,18 +44,8 @@ Copy code
 mkdir -p ~/projects/web_projects/nginx/certs
 cd ~/projects/web_projects/nginx/certs
 
-# Генерация ключа и сертификата
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-    -keyout privkey.pem \
-    -out fullchain.pem \
-    -subj "/C=NL/ST=SomeState/L=SomeCity/O=ITMO/OU=Lab/CN=project1.local"
-privkey.pem — приватный ключ
+<img width="721" height="605" alt="image" src="https://github.com/user-attachments/assets/e45add70-f71c-497a-8d2d-3af1ccfc7ea1" />
 
-fullchain.pem — сертификат
-
-📸 Скриншот: step2_ssl_cert.png
-
-Повторите для project2.local, или используйте один сертификат для обоих локальных доменов.
 
 💻 Шаг 3 — Код приложений
 
