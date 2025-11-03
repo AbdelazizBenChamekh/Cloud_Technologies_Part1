@@ -29,11 +29,11 @@ source .venv/bin/activate
 
 
 📦 Шаг 2 — Установка зависимостей
-
-bash
-Copy code
+```bash
 pip install "uvicorn[standard]" starlette
-📸 Скриншот: step2_dependencies.png
+```
+<img width="502" height="274" alt="image" src="https://github.com/user-attachments/assets/0420f239-3aac-4b29-a8e1-56d6a3297bb1" />
+
 
 🔐 Шаг 2.1 — Создание собственного SSL-сертификата (self-signed)
 
