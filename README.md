@@ -6,14 +6,14 @@
 
 ⚙️ **Структура проекта**
 web_projects/
-├── project1/
-│ └── app1.py
-├── project2/
-│ └── app2.py
-├── nginx/
-│ ├── project1.conf
-│ └── project2.conf
-└── README.md
+ ├── project1/
+ │ └── app1.py
+ ├── project2/
+ │ └── app2.py
+ ├── nginx/
+ │ ├── project1.conf
+ │ └── project2.conf
+ └── README.md
 
 
 ---
@@ -154,7 +154,6 @@ sudo systemctl status nginx
 
 Добавьте в файл /etc/hosts:
 
-lua
 ```bash
 127.0.0.1   project1.local
 127.0.0.1   project2.local
@@ -167,6 +166,7 @@ lua
 
 https://project1.local → Project 1
 https://project2.local → Project 2
+
 <img width="408" height="87" alt="image" src="https://github.com/user-attachments/assets/f2541147-0b92-47d0-8ce0-dfaa1a96b929" />
 
 
