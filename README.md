@@ -141,11 +141,12 @@ server {
 
  **Шаг 6 — Проверка конфигурации Nginx**
 
-bash
+```bash
 Copy code
 sudo nginx -t
 sudo systemctl restart nginx
 sudo systemctl status nginx
+```
 
 <img width="674" height="159" alt="image" src="https://github.com/user-attachments/assets/4b7f0ccc-41e8-4569-9cfe-4f99516f6255" />
 
