@@ -142,7 +142,6 @@ server {
  **Шаг 6 — Проверка конфигурации Nginx**
 
 ```bash
-Copy code
 sudo nginx -t
 sudo systemctl restart nginx
 sudo systemctl status nginx
@@ -166,6 +165,7 @@ sudo systemctl status nginx
  **Шаг 8 — Тестирование HTTPS через браузер**
 
 https://project1.local → Project 1
+
 https://project2.local → Project 2
 
 <img width="408" height="87" alt="image" src="https://github.com/user-attachments/assets/f2541147-0b92-47d0-8ce0-dfaa1a96b929" />
