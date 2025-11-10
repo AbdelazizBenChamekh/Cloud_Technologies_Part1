@@ -1,0 +1,16 @@
+# Bad Dockerfile
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install -y python3 python3-pip
+RUN pip3 install flask requests numpy pandas
+
+COPY . /app
+WORKDIR /app
+
+RUN useradd -m myuser
+USER myuser
+
+EXPOSE 5000
+
+CMD ["python3", "app.py"]
