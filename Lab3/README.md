@@ -13,6 +13,8 @@
 ````
 npm init -y
 ````
+<img width="536" height="275" alt="lab30" src="https://github.com/user-attachments/assets/183769b7-c991-42bb-bfac-b046fae8d148" />
+
 
 Добавили в package.json скрипты:
 
@@ -28,7 +30,8 @@ npm init -y
 npm test
 npm run build
 ````
-📸 Скриншот 1: npm test и build работают локально
+<img width="445" height="261" alt="lab36" src="https://github.com/user-attachments/assets/d043ceb0-c82c-492f-b2eb-feefa2cbf94d" />
+
 
 Создали папки:
 
@@ -37,8 +40,9 @@ mkdir -p .github/workflows
 mkdir screenshots
 ````
 
-📸 Скриншот 2: Создание папки workflows
-Плохой CI/CD (bad-ci.yml)
+<img width="427" height="54" alt="lab31" src="https://github.com/user-attachments/assets/1ffd09b0-5aa0-49db-b981-8fc14ea06162" />
+
+## Плохой CI/CD (bad-ci.yml)
 
 ````
 name: Bad CI/CD
@@ -53,8 +57,9 @@ jobs:
     - run: npm test || true
     - run: npm run build
 ````
-📸 Скриншот 3: Содержимое bad-ci.yml
-Хороший CI/CD (good-ci.yml)
+<img width="671" height="248" alt="lab33" src="https://github.com/user-attachments/assets/c021125d-ab0c-408e-848b-749f84557f51" />
+
+## Хороший CI/CD (good-ci.yml)
 
 ````
 name: Good CI/CD
@@ -89,7 +94,8 @@ jobs:
     - run: npm ci
     - run: npm run build
 ````
-📸 Скриншот 4: Содержимое good-ci.yml
+<img width="505" height="551" alt="lab37" src="https://github.com/user-attachments/assets/22a621f7-0ba0-411f-9ba6-5a47bbefe6bb" />
+
 
 Коммитим:
 
@@ -99,7 +105,6 @@ git status
 git commit -m "Lab3: bad + good CI/CD"
 git push origin main
 ````
-📸 Скриншот 5: git status перед пушем
 
 ## Разбор BAD Practices
 
@@ -123,11 +128,14 @@ git push origin main
     Все в одном job - где именно сломалось? Не понятно
     Фикс: Отдельные jobs test → build с needs
 
-📸 Скриншот 6: GitHub Actions - оба workflow зеленые
+<img width="1920" height="563" alt="FINAL" src="https://github.com/user-attachments/assets/b1844cc4-ec0c-4040-8c01-7468183fa76e" />
 
-📸 Скриншот 7: Bad CI/CD детали (ошибки есть, но || true их скрывает)
 
-📸 Скриншот 8: Good CI/CD детали (все чисто и правильно)
+<img width="1920" height="556" alt="bad" src="https://github.com/user-attachments/assets/cafe98c5-5a4d-4605-bf2a-97cde17d9579" />
+
+
+<img width="1920" height="556" alt="bad" src="https://github.com/user-attachments/assets/8f2a9bd6-c4ac-49ff-b307-9fc81127130f" />
+
 ## Итоги
 
 Оба пайплайна дали зеленые галочки, но разница огромная:
@@ -135,5 +143,3 @@ git push origin main
     Плохой: небезопасный, медленный, ненадежный
 
     Хороший: безопасный, с кэшем (быстрее в 2 раза), падает при ошибках
-Workflows triggered at Mon Dec 29 05:35:22 AM MSK 2025
-CI/CD triggered Mon Dec 29 05:47:18 AM MSK 2025
