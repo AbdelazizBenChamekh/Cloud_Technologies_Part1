@@ -1,0 +1,11 @@
+name: Bad CI/CD ❌
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: git clone https://github.com/AbdelazizBenChamekh/Cloud_Technologies_Part1.git .
+    - run: echo "API_KEY=supersecret12345" >> .env
+    - run: sudo npm install
+    - run: npm test || true
+    - run: npm run build

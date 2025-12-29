@@ -1,0 +1,31 @@
+name: Good CI/CD ✅
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+env:
+  NODE_VERSION: '20'
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm test
+  build:
+    runs-on: ubuntu-22.04
+    needs: test
+    if: github.ref == 'refs/heads/main'
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run build
