@@ -1,4 +1,4 @@
-name: Bad CI/CD ❌
+name: Bad CI/CD
 on: [push]
 jobs:
   build:

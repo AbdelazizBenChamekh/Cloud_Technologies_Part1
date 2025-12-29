@@ -1,11 +1,11 @@
 {
   "name": "lab3-ci-cd",
   "version": "1.0.0",
-  "description": "",
+  "description": "DevOps Lab3 CI/CD example",
   "main": "index.js",
   "scripts": {
-    "test": "echo '✅ All tests passed!' && exit 0",
-    "build": "echo '🚀 Build complete!'"
+    "test": "echo 'All tests passed' && exit 0",
+    "build": "echo 'Build complete'"
   },
   "keywords": [],
   "author": "",

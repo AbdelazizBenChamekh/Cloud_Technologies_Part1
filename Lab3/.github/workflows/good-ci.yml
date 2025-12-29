@@ -1,4 +1,4 @@
-name: Good CI/CD ✅
+name: Good CI/CD
 on:
   push:
     branches: [main]
